@@ -1,0 +1,7 @@
+import numpy
+from scipy.stats import itemfreq
+def hash_h(k, n):
+    for c in range(k):
+        x = numpy.random.binomial(k,1.0/n, n)
+        h = itemfreq(x)
+    return h
